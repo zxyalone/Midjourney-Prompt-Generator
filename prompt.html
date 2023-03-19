@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Midjourney Prompt Generator</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+
+		header {
+			background-color: #007bff;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+
+		nav {
+			background-color: #fff;
+			box-shadow: 0 5px 10px rgba(0,0,0,.1);
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		nav li {
+			margin: 0 10px;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all .2s ease-in-out;
+		}
+
+		nav li:hover {
+			color: #007bff;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+		}
+
+		.category {
+			margin: 10px;
+			padding: 10px;
+			background-color: #fff;
+			box-shadow: 0 5px 10px rgba(0,0,0,.1);
+			flex-basis: 90%;
+			/*text-align: center;*/
+		}
+
+		.category h2 {
+			font-size: 24px;
+			margin: 0 0 10px;
+		}
+
+		.category label {
+			/*display: block;*/
+			margin: 10px 0;
+		}
+
+		.category input[type="checkbox"] {
+			margin-right: 10px;
+		}
+
+		.btn {
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			font-size: 18px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all .2s ease-in-out;
+		}
+
+		.btn:hover {
+			background-color: #0062cc;
+		}
+
+		.prompt {
+			background-color: #fff;
+			box-shadow: 0 5px 10px rgba(0,0,0,.1);
+			padding: 20px;
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.prompt h2 {
+			font-size: 24px;
+			margin: 0 0 10px;
+		}
+
+		.prompt p {
+			font-size: 18px;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Midjourney Prompt Generator</h1>
+	</header>
+
+	
+
+<div class="container">
+	<div class="category">
+		<h2>场景</h2>
+		<label><input type="checkbox" name="scenes" value="Snowy region">雪域</label>
+		<label><input type="checkbox" name="scenes" value="above the clouds">飞跃云端</label>
+		<label><input type="checkbox" name="scenes" value="Plateau">高原</label>
+		<label><input type="checkbox" name="scenes" value="Temple">寺庙</label>
+		<label><input type="checkbox" name="scenes" value="Grassland">草原</label>
+		<label><input type="checkbox" name="scenes" value="Cave">洞穴</label>
+		<label><input type="checkbox" name="scenes" value="Island">海岛</label>
+<label><input type="checkbox" name="scenes" value="Wilderness">蛮荒之地</label>
+<label><input type="checkbox" name="scenes" value="Valley">山谷</label>
+<label><input type="checkbox" name="scenes" value="Swamp">沼泽地</label>
+<label><input type="checkbox" name="scenes" value="Palace">宫殿</label>
+<label><input type="checkbox" name="scenes" value="Pool">水潭</label>
+<label><input type="checkbox" name="scenes" value="Icy tundra">冰天雪地</label>
+<label><input type="checkbox" name="scenes" value="Ancient battlefield">古代战场</label>
+<label><input type="checkbox" name="scenes" value="Hall">大厅</label>
+<label><input type="checkbox" name="scenes" value="Waterfall">瀑布</label>
+<label><input type="checkbox" name="scenes" value="Mechanism">机关</label>
+<label><input type="checkbox" name="scenes" value="Tribe">部落</label>
+<label><input type="checkbox" name="scenes" value="Illusory realm">幻境</label>
+<label><input type="checkbox" name="scenes" value="Deep In The Woods">密林深处</label>
+<label><input type="checkbox" name="scenes" value="Coastline">海岸线</label>
+<label><input type="checkbox" name="scenes" value="Sea of clouds">云海</label>
+<label><input type="checkbox" name="scenes" value="dreamland">梦境</label>
+<label><input type="checkbox" name="scenes" value="Fantasy">幻想</label>
+<label><input type="checkbox" name="scenes" value="Realism">现实主义</label>
+<label><input type="checkbox" name="scenes" value="Unbridled imagination">异想天开</label>
+<label><input type="checkbox" name="scenes" value="A powerful and unconstrained">天马行空</label>
+<label><input type="checkbox" name="scenes" value="Surrealism">超现实主义</label>
+<label><input type="checkbox" name="scenes" value="Hyperrealism">超写实主义</label>
+<label><input type="checkbox" name="scenes" value="Ruins">废墟</label>
+<label><input type="checkbox" name="scenes" value="City centre">城市中心</label>
+<label><input type="checkbox" name="scenes" value="Abandoned city">废弃城市</label>
+<label><input type="checkbox" name="scenes" value="Street view">街景</label>
+<label><input type="checkbox" name="scenes" value="Universe">宇宙</label>
+<label><input type="checkbox" name="scenes" value="Galaxy">银河系</label>
+<label><input type="checkbox" name="scenes" value="Nebula">星云</label>
+<label><input type="checkbox" name="scenes" value="In the morning fog">晨雾</label>
+<label><input type="checkbox" name="scenes" value="different world">异世界</label>
+<label><input type="checkbox" name="scenes" value="hell">地狱</label>
+<label><input type="checkbox" name="scenes" value="Overgrown with weeds">杂草丛生</label>
+<label><input type="checkbox" name="scenes" value="Alpine meadow">高山草甸</label>
+<label><input type="checkbox" name="scenes" value="The Hanging Gardens">空中花园</label>
+<label><input type="checkbox" name="scenes" value="vestige">遗迹</label>
+<label><input type="checkbox" name="scenes" value="Bright background">干净背景</label>
+<label><input type="checkbox" name="scenes" value="Apocalypse">世界末日</label>
+
+
+
+
+	</div>
+
+	<div class="category">
+		<h2>艺术流派</h2>
+		<label><input type="checkbox" name="styles" value="Romanticism">浪漫主义</label>
+		<label><input type="checkbox" name="styles" value="Classicism">古典主义</label>
+		<label><input type="checkbox" name="styles" value="Classical Realism">古典现实主义</label>
+		<label><input type="checkbox" name="styles" value="Neoclassicism">新古典主义</label>
+		<label><input type="checkbox" name="styles" value="Impressionism">印象派</label>
+<label><input type="checkbox" name="styles" value="Neo-impressionism">新印象派</label>
+<label><input type="checkbox" name="styles" value="Modernism">现代主义</label>
+<label><input type="checkbox" name="styles" value="Postmodernism">后现代主义</label>
+<label><input type="checkbox" name="styles" value="Realism">现实主义</label>
+<label><input type="checkbox" name="styles" value="Dadaism">达达主义</label>
+<label><input type="checkbox" name="styles" value="Hyperrealism">超现实主义</label>
+<label><input type="checkbox" name="styles" value="Brutalism">野性主义</label>
+<label><input type="checkbox" name="styles" value="Fauvism">野兽主义</label>
+<label><input type="checkbox" name="styles" value="Expressionism">表现主义</label>
+<label><input type="checkbox" name="styles" value="Luminism">光色主义</label>
+<label><input type="checkbox" name="styles" value="Japonism">日本主义</label>
+<label><input type="checkbox" name="styles" value="Magic Realism">魔幻现实主义</label>
+<label><input type="checkbox" name="styles" value="Fantastic Realism">奇幻现实主义</label>
+<label><input type="checkbox" name="styles" value="Synchronism">同步主义</label>
+<label><input type="checkbox" name="styles" value="Deconstructivism">解构主义</label>
+<label><input type="checkbox" name="styles" value="Abstract Expressionism">抽象表现主义</label>
+<label><input type="checkbox" name="styles" value="Minimalism">极简主义</label>
+<label><input type="checkbox" name="styles" value="Constructivism">构成主义</label>
+<label><input type="checkbox" name="styles" value="Contemporary Realism">当代现实主义</label>
+<label><input type="checkbox" name="styles" value="Futurism">未来主义</label>
+<label><input type="checkbox" name="styles" value="Miserablism">悲惨主义</label>
+<label><input type="checkbox" name="styles" value="Academism">学院主义</label>
+<label><input type="checkbox" name="styles" value="Cubism">立体主义</label>
+<label><input type="checkbox" name="styles" value="Structuralism">结构主义</label>
+<label><input type="checkbox" name="styles" value="Poststructuralism">后结构主义</label>
+
+	</div>
+
+
+
+	<div class="category">
+		<h2>视角</h2>
+		<label><input type="checkbox" name="views" value="aerial view">鸟瞰图</label>
+		<label><input type="checkbox" name="views" value="Top view">顶视图</label>
+		<label><input type="checkbox" name="views" value="tilt-shift">倾斜移位</label>
+		<label><input type="checkbox" name="views" value="satellite view">卫星视图</label>
+		<label><input type="checkbox" name="views" value="Bottom view">底视图</label>
+<label><input type="checkbox" name="views" value="tront view">前视图</label>
+<label><input type="checkbox" name="views" value="side view">侧视图</label>
+<label><input type="checkbox" name="views" value="rear view">后视图</label>
+<label><input type="checkbox" name="views" value="product view">产品视图</label>
+<label><input type="checkbox" name="views" value="lookup">仰视</label>
+<label><input type="checkbox" name="views" value="first-person view">第一人称视角</label>
+<label><input type="checkbox" name="views" value="isometric view">等距视图</label>
+<label><input type="checkbox" name="views" value="closeup view">特写视图</label>
+<label><input type="checkbox" name="views" value="high angle view">高角度视图</label>
+<label><input type="checkbox" name="views" value="microscopic view">微观</label>
+<label><input type="checkbox" name="views" value="third-person perspective">第三人称视角</label>
+<label><input type="checkbox" name="views" value="two-point perspective">两点透视</label>
+<label><input type="checkbox" name="views" value="Three-point perspective">三点透视</label>
+<label><input type="checkbox" name="views" value="Elevation perspective">立面透视</label>
+<label><input type="checkbox" name="views" value="ultra wide shot">超广角镜头</label>
+<label><input type="checkbox" name="views" value="cinematic shot">电影镜头</label>
+<label><input type="checkbox" name="views" value="in focus">焦点对准</label>
+<label><input type="checkbox" name="views" value="depth of field">景深</label>
+<label><input type="checkbox" name="views" value="Wide-angle view">广角镜头</label>
+
+	</div>
+
+	<div class="category">
+		<h2>光照</h2>
+		<label><input type="checkbox" name="lights" value="cold light">冷光</label>
+		<label><input type="checkbox" name="lights" value="Warm light">暖光</label>
+		<label><input type="checkbox" name="lights" value="bright">明亮的</label>
+		<label><input type="checkbox" name="lights" value="atmospheric lighting">氛围感照明</label>
+		<label><input type="checkbox" name="lights" value="hard lighting">强光/硬光</label>
+		<label><input type="checkbox" name="lights" value="rim lights">边缘灯</label>
+		<label><input type="checkbox" name="lights" value="Split Lighting">分体照明</label>
+		<label><input type="checkbox" name="lights" value="Split Lighting">前灯</label>
+		<label><input type="checkbox" name="lights" value="Back lighting">背光照明</label>
+		<label><input type="checkbox" name="lights" value="Crepuscular Ray">黄昏的光线</label>
+		<label><input type="checkbox" name="lights" value="fluorescent lighting">荧光灯</label>
+		<label><input type="checkbox" name="lights" value="Rembrandt Lighting">伦勃朗光</label>
+		<label><input type="checkbox" name="lights" value="morning light">晨光</label>
+		<label><input type="checkbox" name="lights" value="soft lights">柔光</label>
+		<label><input type="checkbox" name="lights" value="cinematic lighting">电影照明</label>
+		<label><input type="checkbox" name="lights" value="clean background trending">千净的背景趋势</label>
+		<label><input type="checkbox" name="lights" value="global illuminations">全局照明</label>
+		<label><input type="checkbox" name="lights" value="neon cold lighting">霄虹灯冷光</label>
+		<label><input type="checkbox" name="lights" value="neon lights">霓虹灯</label>
+		<label><input type="checkbox" name="lights" value="volumetric lighting">体积照明</label>
+		<label><input type="checkbox" name="lights" value="dramatic lighting">舞台灯光</label>
+		<label><input type="checkbox" name="lights" value="natural lighting">自然灯光</label>
+
+	</div>
+	<div class="category">
+		<h2>相机</h2>
+		<label><input type="checkbox" name="cameras" value="NIKON">尼康</label>
+		<label><input type="checkbox" name="cameras" value="CANON">佳能</label>
+		<label><input type="checkbox" name="cameras" value="SONY">索尼</label>
+		<label><input type="checkbox" name="cameras" value="FUJIFILM">富士</label>
+		<label><input type="checkbox" name="cameras" value="PANASONIC">松下</label>
+		<label><input type="checkbox" name="cameras" value="LEICA">徕卡</label>
+		<label><input type="checkbox" name="cameras" value="PENTAX">宾得</label>
+		<label><input type="checkbox" name="cameras" value="RICOH">理光</label>
+		<label><input type="checkbox" name="cameras" value="HASSELBLAD">哈苏</label>
+		<label><input type="checkbox" name="cameras" value="POLAROID">宝丽来</label>
+		<label><input type="checkbox" name="cameras" value="DSLR">单反</label>
+	</div>
+	<div class="category">
+		<h2>镜头与画质</h2>
+		<label><input type="checkbox" name="lens" value="18mm">18mm</label>
+		<label><input type="checkbox" name="lens" value="24mm">24mm</label>
+		<label><input type="checkbox" name="lens" value="35mm">35mm</label>
+		<label><input type="checkbox" name="lens" value="50mm">50mm</label>
+		<label><input type="checkbox" name="lens" value="85mm">85mm</label>
+		<label><input type="checkbox" name="lens" value="135mm">135mm</label>
+		<label><input type="checkbox" name="lens" value="200mm">200mm</label>
+		<label><input type="checkbox" name="lens" value="300mm">300mm</label>
+		<label><input type="checkbox" name="lens" value="600mm">600mm</label>
+		<label><input type="checkbox" name="lens" value="4K">4K</label>
+		<label><input type="checkbox" name="lens" value="8K">8K</label>
+		<label><input type="checkbox" name="lens" value="HD">HD</label>
+		<label><input type="checkbox" name="lens" value="HDR">HDR</label>
+		<label><input type="checkbox" name="lens" value="UHDR">UHDR</label>
+	</div>
+	
+</div>
+
+<div class="container">
+	<button class="btn">Generate Prompt</button>
+</div>
+
+<div class="container">
+	<div class="prompt">
+		<h2>Your Prompt:</h2>
+	
+		<p></p>
+	</div>
+</div>
+
+<script>
+	const generatePromptButton = document.querySelector('.btn');
+const promptOutput = document.querySelector('.prompt p');
+
+generatePromptButton.addEventListener('click', () => {
+  const sceneCheckboxes = document.querySelectorAll('input[name="scenes"]:checked');
+  const styleCheckboxes = document.querySelectorAll('input[name="styles"]:checked');
+  const viewCheckboxes = document.querySelectorAll('input[name="views"]:checked');
+  const lightCheckboxes = document.querySelectorAll('input[name="lights"]:checked');
+  const cameraCheckboxes = document.querySelectorAll('input[name="cameras"]:checked');
+  const lenCheckboxes = document.querySelectorAll('input[name="lens"]:checked');
+
+
+  const scenes = getValuesFromCheckboxes(sceneCheckboxes);
+  const styles = getValuesFromCheckboxes(styleCheckboxes);
+  const views = getValuesFromCheckboxes(viewCheckboxes);
+  const lights = getValuesFromCheckboxes(lightCheckboxes);
+  const cameras = getValuesFromCheckboxes(cameraCheckboxes);
+  const lens = getValuesFromCheckboxes(lenCheckboxes);
+
+  const prompt = scenes.concat(styles,views,lights,cameras,lens).join(',');
+  promptOutput.textContent = prompt;
+});
+
+function getValuesFromCheckboxes(checkboxes) {
+  const values = [];
+  checkboxes.forEach((checkbox) => {
+    values.push(checkbox.value);
+  });
+  return values;
+}
+
+
+
+
+
+</script>
+</body>
+</html>
